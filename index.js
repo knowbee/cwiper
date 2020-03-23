@@ -1,11 +1,26 @@
+const { soclean } = require("./lib/cleaner");
 const fs = require("fs");
+const spinner = require("ora")();
 
-const basedir = __dirname + "/data/";
-const re_single_line_comments = /^(\/\/\s*).*/gim; // comments like this (//)
-const files = fs.readdirSync(basedir);
+if (process.argv.length < 3) {
+  console.error(`Usage: soclean --path <Path Name>`);
+  process.exit(1);
+}
 
-files.forEach(filename => {
-  filedir = fs.realpathSync(basedir + filename);
-  content = fs.readFileSync(filedir, "utf-8");
-  fs.writeFileSync(filedir, content.replace(re_single_line_comments, ""));
+process.argv.slice(2).forEach(cmd => {
+  if (cmd === "--path" || cmd === "-p") {
+    try {
+      if (fs.existsSync(process.argv[3])) {
+        soclean();
+      } else {
+        console.log("");
+        console.log("  $ soclean --help");
+        process.exit(0);
+      }
+      spinner.succeed("done");
+    } catch (error) {
+      console.log(error);
+      console.log("invalid path");
+    }
+  }
 });
