@@ -4,11 +4,27 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-A smart comments cli tool removal for all type of files from any type of project (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
+A smart comments cli tool removal for all types of files from any type of project (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
 
 ## Disclaimer
 
 ⚠ commenting code is great and you should do it but if you're like me and hate comments that comes with boilerplates and some projects then this tool is for you 🙂
+
+## Preview
+
+<p>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_before.PNG" width="400px" height="auto" hspace="10"/>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_after.PNG" width="400px" height="auto" hspace="20"/>
+</p>
+
+## Supported Programming Languages
+
+| Language     | Type of Comments                  |
+| ------------ | --------------------------------- |
+| ✔ Python     | #                                 |
+| ✔ Javascript | //, /\* \*/, {/\* \*/}, /\*\* \*/ |
+| ✔ Dart       | //                                |
+| ✔ Go         | /\* \*/, //                       |
 
 ## Install
 
@@ -36,7 +52,17 @@ cwiper <options>
 $ cwiper --path <pathname>
 ```
 
-## Options:
+## Show Off
+
+<p>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_ts_before.PNG" width="400px" height="auto" hspace="10"/>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_ts_after.PNG" width="400px" height="auto" hspace="20"/>
+</p>
+
+<p>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_dart_before.PNG" width="400px" height="auto" hspace="10"/>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_dart_after.PNG" width="400px" height="auto" hspace="20"/>
+</p>
 
 ## Contribution
 
