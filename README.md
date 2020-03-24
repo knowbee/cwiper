@@ -4,7 +4,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-A smart comments cli tool removal for all types of files from any type of project (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
+A smart comments cli tool remover for all types of files from any type of project (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
 
 ## Disclaimer
 
