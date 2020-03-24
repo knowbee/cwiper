@@ -1,7 +1,7 @@
 {
   "name": "cwiper",
   "version": "0.0.1",
-  "description": "A smart comments cli tool remover for all type of files from any project",
+  "description": "A smart cli tool comments remover for all type of files from any project",
   "main": "index.js",
   "bin": {
     "cwiper": "index.js"
@@ -11,6 +11,10 @@
   },
   "keywords": [],
   "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/knowbee/cwiper/issues"
+  },
+  "homepage": "https://github.com/knowbee/cwiper#readme",
   "license": "MIT",
   "dependencies": {
     "commander": "^5.0.0",
