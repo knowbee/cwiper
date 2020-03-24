@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const { soclean, transform } = require("./lib/cleaner");
+const { cwiper, transform } = require("./lib/cleaner");
 const fs = require("fs");
 const spinner = require("ora")();
 
 if (process.argv.length < 3) {
-  console.error(`Usage: soclean --path <Path Name>`);
+  console.error(`Usage: cwiper --path <Path Name>`);
   process.exit(1);
 }
 
@@ -12,7 +12,7 @@ process.argv.slice(2).forEach(cmd => {
   if (cmd === "--path" || cmd === "-p") {
     try {
       if (fs.existsSync(process.argv[3])) {
-        soclean
+        cwiper
           .then(files => {
             files.forEach(file => {
               transform(file);
@@ -24,7 +24,7 @@ process.argv.slice(2).forEach(cmd => {
           });
       } else {
         console.log("");
-        console.log("  $ soclean --help");
+        console.log("  $ cwiper --help");
         process.exit(0);
       }
     } catch (error) {

@@ -1,31 +1,39 @@
-# soclean
+# cwiper (comments wiper 😉)
 
-[![Build Status](https://travis-ci.com/knowbee/soclean.svg?token=yN9jXnk59suszMqNsJJb&branch=master)](https://travis-ci.com/knowbee/soclean)
+[![Build Status](https://travis-ci.com/knowbee/cwiper.svg?token=yN9jXnk59suszMqNsJJb&branch=master)](https://travis-ci.com/knowbee/cwiper)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-A smart comments removal for all type of files from generated boilerplates (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
+A smart comments cli tool removal for all type of files from any type of project (js, ts, jsx,tsx, py, go, dart, etc..) - make it clean again.
+
+## Disclaimer
+
+⚠ commenting code is great and you should do it but if you're like me and hate comments that comes with boilerplates and some projects then this tool is for you 🙂
 
 ## Install
 
 ```cli
-npm install -g soclean
+npm install -g cwiper
 ```
 
 or
 
 ```cli
-yarn global add soclean
+yarn global add cwiper
 ```
 
 ## Preview
 
-## Using soclean
+## Using cwiper
+
+```cli
+cwiper <options>
+```
 
 #### Command Line
 
 ```cli
-$ soclean <options>
+$ cwiper --path <pathname>
 ```
 
 ## Options:

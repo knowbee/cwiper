@@ -1,8 +1,11 @@
 {
-  "name": "soclean",
+  "name": "cwiper",
   "version": "0.0.1",
-  "description": "A smart comments removal for all type of files from generated boilerplates",
+  "description": "A smart comments cli tool removal for all type of files from any project",
   "main": "index.js",
+  "bin": {
+    "cwiper": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
