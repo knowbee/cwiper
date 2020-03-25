@@ -17,7 +17,9 @@ A smart comments cli tool remover for all types of files from any type of projec
     <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/cwiper_after.PNG" width="400px" height="auto" hspace="20"/>
 </p>
 
-## Supported Programming Languages
+## Supported Programming/Markup Languages/Technologies (All)
+
+### Popular ones
 
 | Language     | Type of Comments                  |
 | ------------ | --------------------------------- |
@@ -28,6 +30,7 @@ A smart comments cli tool remover for all types of files from any type of projec
 | ✔ Lua        | --, --[[ --]]                     |
 | ✔ JSP        | <%-- --%>                         |
 | ✔ Ruby       | =begin =end                       |
+| ✔ HTML       | <!- ->                            |
 
 ## Install
 
