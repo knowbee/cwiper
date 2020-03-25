@@ -26,6 +26,7 @@ A smart comments cli tool remover for all types of files from any type of projec
 | ✔ Dart       | //                                |
 | ✔ Go         | /\* \*/, //                       |
 | ✔ Lua        | --, --[[ --]]                     |
+| ✔ JSP        | <%-- --%>                         |
 
 ## Install
 
