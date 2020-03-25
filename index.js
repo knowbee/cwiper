@@ -2,11 +2,13 @@
 const { cwiper, transform } = require("./lib/cleaner");
 const fs = require("fs");
 const spinner = require("ora")();
-
-if (process.argv.length < 3) {
-  console.error(`Usage: cwiper --path <Path Name>`);
-  process.exit(1);
-}
+const clear = require("clear");
+const chalk = require("chalk");
+const figlet = require("figlet");
+clear();
+console.log(
+  chalk.magenta(figlet.textSync("cwiper", { horizontalLayout: "full" }))
+);
 
 process.argv.slice(2).forEach(cmd => {
   if (cmd === "--path" || cmd === "-p") {
@@ -17,7 +19,7 @@ process.argv.slice(2).forEach(cmd => {
             files.forEach(file => {
               transform(file);
             });
-            spinner.succeed("done");
+            spinner.succeed("now your it all looks clean :)");
           })
           .catch(error => {
             process.exit(1);
@@ -31,5 +33,10 @@ process.argv.slice(2).forEach(cmd => {
       console.log(error);
       console.log("invalid path");
     }
+  }
+  if (cmd === "--version" || cmd === "-v") {
+    console.log("here");
+
+    console.log("1.0.1");
   }
 });
