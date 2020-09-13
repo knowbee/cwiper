@@ -19,7 +19,7 @@ process.argv.slice(2).forEach(cmd => {
             files.forEach(file => {
               transform(file);
             });
-            spinner.succeed("now your it all looks clean :)");
+            spinner.succeed("YEAH!! :)");
           })
           .catch(error => {
             process.exit(1);
@@ -35,8 +35,6 @@ process.argv.slice(2).forEach(cmd => {
     }
   }
   if (cmd === "--version" || cmd === "-v") {
-    console.log("here");
-
-    console.log("1.0.1");
+    console.log("1.0.2");
   }
 });

@@ -1,6 +1,6 @@
 {
   "name": "cwiper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A smart cli tool comments remover for all type of files from any project",
   "main": "index.js",
   "bin": {
